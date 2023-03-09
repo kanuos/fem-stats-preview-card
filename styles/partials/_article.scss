@@ -1,6 +1,6 @@
 article {
   text-align: center;
-  height: 90%;
+  height: clamp(80%, 36rem, 48rem);
   border-radius: calc($baseFontSize * 0.5);
   overflow: hidden;
   width: 90%;
@@ -8,19 +8,19 @@ article {
 
   .card {
     &--img {
-      height: 33%;
+      height: 35%;
       width: 100%;
       display: block;
       background-image: linear-gradient(to right, $accent--op, $accent--op),
         url(../images/image-header-mobile.jpg);
-      background-size: contain;
+      background-size: cover;
       background-position: center;
       filter: brightness(70%);
     }
 
     &--text {
-      height: 67%;
-      padding: calc($baseFontSize * 2) $baseFontSize;
+      height: 65%;
+      padding: calc($baseFontSize * 2) 0;
       display: flex;
       flex-direction: column;
       gap: calc($baseFontSize * 1.5);
@@ -32,7 +32,7 @@ article {
       }
 
       h1 {
-        font-size: calc($baseFontSize * 1.75);
+        font-size: calc($baseFontSize * 1.45);
         font-weight: 700;
         color: $heading;
 
@@ -44,17 +44,18 @@ article {
       p {
         color: $paragraph;
         opacity: $opacity;
-        font-size: calc($baseFontSize * 0.9);
+        font-size: calc($baseFontSize * 0.75);
         line-height: calc($baseFontSize * 1.1);
       }
 
       ul.stat-list {
         list-style: none;
         display: flex;
-        height: 100%;
+        height: 80%;
         flex-direction: column;
         justify-content: space-around;
         margin-top: auto;
+        gap: $baseFontSize;
 
         li.stat {
           display: flex;
@@ -64,11 +65,11 @@ article {
           gap: calc($baseFontSize * 0.25);
           strong {
             color: $heading;
-            font-size: calc($baseFontSize * 1.15);
+            font-size: calc($baseFontSize * 1.1);
           }
           span {
             color: $stat;
-            font-size: calc($baseFontSize * 0.65);
+            font-size: calc($baseFontSize * 0.6);
             text-transform: uppercase;
             font-family: "Lexend Deca", sans-serif;
             opacity: $opacity;

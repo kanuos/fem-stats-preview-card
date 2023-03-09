@@ -1,9 +1,9 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   article {
     text-align: left;
-    height: 65%;
-    max-height: 50vh;
-    width: 90%;
+    height: 60%;
+    max-height: 22rem;
+    width: 95%;
     max-width: 60rem;
     display: flex;
     flex-direction: row-reverse;
@@ -13,7 +13,6 @@
         width: 50%;
         background-image: linear-gradient(to right, $accent--op, $accent--op),
           url(../images/image-header-desktop.jpg);
-        background-size: cover;
       }
 
       &--text {
@@ -30,7 +29,7 @@
         }
 
         h1 {
-          font-size: calc($baseFontSize * 2);
+          font-size: calc($baseFontSize * 1.5);
         }
 
         p {
@@ -47,6 +46,26 @@
           li.stat {
             align-items: flex-start;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  article {
+    max-height: 25rem;
+
+    .card {
+
+      &--text {
+        h1 {
+          font-size: calc($baseFontSize * 1.75);
+        }
+
+        p {
+          font-size: calc($baseFontSize * .9);
+          line-height: calc($baseFontSize * 1.5);
         }
       }
     }
