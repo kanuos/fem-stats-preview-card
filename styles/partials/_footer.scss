@@ -1,0 +1,9 @@
+footer.attribution {
+  position: absolute;
+  top: -9999%;
+  left: -9999%;
+  transform: scale(0);
+  opacity: 0;
+  z-index: -99999;
+  pointer-events: none;
+}

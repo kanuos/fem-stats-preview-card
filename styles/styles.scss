@@ -1,6 +1,22 @@
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
+
+@import "./partials/base";
+@import "./partials/footer";
+@import "./partials/article";
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: $mainBg;
+  padding: calc($baseFontSize * 2);
+}
+

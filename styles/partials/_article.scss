@@ -1,0 +1,81 @@
+article {
+  text-align: center;
+  height: 90%;
+  border-radius: calc($baseFontSize * 0.5);
+  overflow: hidden;
+  width: 90%;
+  max-width: 24rem;
+
+  .card {
+    &--img {
+      height: 33%;
+      width: 100%;
+      display: block;
+      background-image: linear-gradient(to right, $accent--op, $accent--op),
+        url(../images/image-header-mobile.jpg);
+      background-size: contain;
+      background-position: center;
+      filter: brightness(70%);
+    }
+
+    &--text {
+      height: 67%;
+      padding: calc($baseFontSize * 2) $baseFontSize;
+      display: flex;
+      flex-direction: column;
+      gap: calc($baseFontSize * 1.5);
+      background-color: $cardBg;
+
+      & > * {
+        margin: 0 auto;
+        width: 75%;
+      }
+
+      h1 {
+        font-size: calc($baseFontSize * 1.75);
+        font-weight: 700;
+        color: $heading;
+
+        span {
+          color: $accent;
+        }
+      }
+
+      p {
+        color: $paragraph;
+        opacity: $opacity;
+        font-size: calc($baseFontSize * 0.9);
+        line-height: calc($baseFontSize * 1.1);
+      }
+
+      ul.stat-list {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: auto;
+
+        li.stat {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: calc($baseFontSize * 0.25);
+          strong {
+            color: $heading;
+            font-size: calc($baseFontSize * 1.15);
+          }
+          span {
+            color: $stat;
+            font-size: calc($baseFontSize * 0.65);
+            text-transform: uppercase;
+            font-family: "Lexend Deca", sans-serif;
+            opacity: $opacity;
+            letter-spacing: calc($baseFontSize * 0.025);
+          }
+        }
+      }
+    }
+  }
+}

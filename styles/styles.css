@@ -1,6 +1,98 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+footer.attribution {
+  position: absolute;
+  top: -9999%;
+  left: -9999%;
+  transform: scale(0);
+  opacity: 0;
+  z-index: -99999;
+  pointer-events: none;
+}
+
+article {
+  text-align: center;
+  height: 90%;
+  border-radius: 7.5px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 24rem;
+}
+article .card--img {
+  height: 33%;
+  width: 100%;
+  display: block;
+  background-image: linear-gradient(to right, hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(../images/image-header-mobile.jpg);
+  background-size: contain;
+  background-position: center;
+  filter: brightness(70%);
+}
+article .card--text {
+  height: 67%;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 22.5px;
+  background-color: hsl(244, 38%, 16%);
+}
+article .card--text > * {
+  margin: 0 auto;
+  width: 75%;
+}
+article .card--text h1 {
+  font-size: 26.25px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+article .card--text h1 span {
+  color: hsl(277, 64%, 61%);
+}
+article .card--text p {
+  color: hsla(0, 0%, 100%, 0.75);
+  opacity: 0.6;
+  font-size: 13.5px;
+  line-height: 16.5px;
+}
+article .card--text ul.stat-list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: auto;
+}
+article .card--text ul.stat-list li.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75px;
+}
+article .card--text ul.stat-list li.stat strong {
+  color: hsl(0, 0%, 100%);
+  font-size: 17.25px;
+}
+article .card--text ul.stat-list li.stat span {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 9.75px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  opacity: 0.6;
+  letter-spacing: 0.375px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: hsl(233, 47%, 7%);
+  padding: 30px;
 }/*# sourceMappingURL=styles.css.map */
