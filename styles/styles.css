@@ -95,4 +95,49 @@ main {
   min-height: 100dvh;
   background-color: hsl(233, 47%, 7%);
   padding: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  article {
+    text-align: left;
+    height: 65%;
+    width: 90%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  article .card--img {
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to right, hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(../images/image-header-desktop.jpg);
+    background-size: cover;
+  }
+  article .card--text {
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 18.75px;
+  }
+  article .card--text > * {
+    margin: 0;
+    width: 75%;
+  }
+  article .card--text h1 {
+    font-size: 30px;
+  }
+  article .card--text p {
+    line-height: 22.5px;
+  }
+  article .card--text ul.stat-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    height: auto;
+  }
+  article .card--text ul.stat-list li.stat {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */

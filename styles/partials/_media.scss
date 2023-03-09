@@ -1,0 +1,53 @@
+@media screen and (min-width: 1024px) {
+  article {
+    text-align: left;
+    height: 65%;
+    width: 90%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row-reverse;
+    .card {
+      &--img {
+        height: 100%;
+        width: 50%;
+        background-image: linear-gradient(to right, $accent--op, $accent--op),
+          url(../images/image-header-desktop.jpg);
+        background-size: cover;
+      }
+
+      &--text {
+        height: 100%;
+        width: 50%;
+
+        align-items: center;
+        justify-content: center;
+        gap: calc($baseFontSize * 1.25);
+
+        & > * {
+          margin: 0;
+          width: 75%;
+        }
+
+        h1 {
+          font-size: calc($baseFontSize * 2);
+        }
+
+        p {
+          line-height: calc($baseFontSize * 1.5);
+        }
+
+        ul.stat-list {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: calc($baseFontSize * 3);
+          height: auto;
+          li.stat {
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

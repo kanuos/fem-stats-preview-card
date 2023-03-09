@@ -20,3 +20,5 @@ main {
   padding: calc($baseFontSize * 2);
 }
 
+// media query partial importer
+@import "./partials/media";
